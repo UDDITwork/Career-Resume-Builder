@@ -30,7 +30,7 @@ It has 5 Core Features:
 
 ## 🔍 Resume Parser
 
-OpenResume’s second component is the resume parser. For those who have an existing resume, the resume parser can help test and confirm its ATS readability.
+Career-Resume-Builder’s second component is the resume parser. For those who have an existing resume, the resume parser can help test and confirm its ATS readability.
 
 ![Resume Parser Demo](https://i.ibb.co/JvSVwNk/resume-parser-demo-optimize.gif)
 
@@ -67,7 +67,7 @@ OpenResume is created with the NextJS web framework and follows its project stru
 2. Change the directory `cd open-resume`
 3. Install the dependency `npm install`
 4. Start a development server `npm run dev`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see OpenResume live
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see CareerResumeBuilder live
 
 ### Method 2: Docker
 
@@ -75,4 +75,4 @@ OpenResume is created with the NextJS web framework and follows its project stru
 2. Change the directory `cd open-resume`
 3. Build the container `docker build -t open-resume .`
 4. Start the container `docker run -p 3000:3000 open-resume`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see OpenResume live
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see CarrerResumeBuilder live
