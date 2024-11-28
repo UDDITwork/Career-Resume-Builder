@@ -1,4 +1,4 @@
-## </Career-Resume-Builder>  
+## *</Career-Resume-Builder>*  
 
 🚀 **Under pre-released Beta Module | Shree-AI Version** 🚀  
 <:::Still in dev phase:::>
