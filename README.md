@@ -1,7 +1,7 @@
 
 # </Career-Resume-Builder>  
 
-🚀 **Beta Module | Shree-AI Pre-Testing Version** 🚀  
+🚀 **under pre-released Beta Module | Shree-AI Version** 🚀  
 <:::Still in dev phase:::>
 Welcome to **Career-Resume-Builder**, the pre-release beta glimpse of Shree-AI's capabilities—a **next-gen AI-powered resume builder** for crafting professional, ATS-ready resumes in real-time. Designed to make resume creation fast, intelligent, and hassle-free, this beta version offers a powerful sneak peek into Shree-AI's transformative potential.  
 
@@ -11,7 +11,7 @@ Career-Resume-Builder is a powerful open-source resume builder and resume parser
 
 The goal of Career-Resume-Builder is to provide everyone with free access to a modern professional resume design and enable anyone to apply for jobs with confidence.
 
-Official site: [https://notdecided.com](https://career-resume-builder.com)
+Official site: [https://notdecided.com](https://Career-Resume-Builder.com)
 
 ## ⚒️ Resume Builder
 
@@ -34,7 +34,7 @@ Career-Resume-Builder’s second component is the resume parser. For those who h
 
 ![Resume Parser Demo](https://i.ibb.co/JvSVwNk/resume-parser-demo-optimize.gif)
 
-You can learn more about the resume parser algorithm in the ["Resume Parser Algorithm Deep Dive" section](https://open-resume.com/resume-parser).
+You can learn more about the resume parser algorithm in the ["Resume Parser Algorithm Deep Dive" section](https://Career-Resume-Builder.com/resume-parser).
 
 ## 📚 Tech Stack
 
@@ -50,7 +50,7 @@ You can learn more about the resume parser algorithm in the ["Resume Parser Algo
 
 ## 📁 Project Structure
 
-OpenResume is created with the NextJS web framework and follows its project structure. The source code can be found in `src/app`. There are a total of 4 page routes as shown in the table below. (Code path is relative to `src/app`)
+Career-Resume-Builder is created with the NextJS web framework and follows its project structure. The source code can be found in `src/app`. There are a total of 4 page routes as shown in the table below. (Code path is relative to `src/app`)
 
 | <div style="width:115px">**Page Route**</div> | **Code Path** | **Description** |
 |---|---|---|
@@ -64,15 +64,113 @@ OpenResume is created with the NextJS web framework and follows its project stru
 ### Method 1: npm
 
 1. Download the repo 
-2. Change the directory `cd open-resume`
+2. Change the directory `cd Career-Resume-Builder`
 3. Install the dependency `npm install`
 4. Start a development server `npm run dev`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see CareerResumeBuilder live
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see Career-Resume-Builder live
 
-### Method 2: Docker
+## 🌐 Hosting on Google Cloud  
 
-1. Download the repo `git clone https://github.com/UDDITwork/open-resume-builder.git`
-2. Change the directory `cd open-resume`
-3. Build the container `docker build -t open-resume .`
-4. Start the container `docker run -p 3000:3000 open-resume`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see CarrerResumeBuilder live
+### Prerequisites:  
+- A Google Cloud account ([Sign up here](https://cloud.google.com/)).  
+- Google Cloud SDK installed ([Installation guide](https://cloud.google.com/sdk/docs/install)).  
+
+### Steps:  
+1. **Enable Cloud Run and Container Registry**:  
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).  
+   - Enable **Cloud Run** and **Container Registry APIs**.  
+
+2. **Clone the Repository**:  
+   ```bash
+   git clone https://github.com/UDDITwork/Career-Resume-Builder.git
+   cd Career-Resume-Builder
+Build the Docker Image:
+
+
+docker build -t gcr.io/<your-project-id>/career-resume-builder .
+Push the Image to Google Container Registry:
+
+bash
+Copy code
+docker push gcr.io/<your-project-id>/career-resume-builder
+Deploy to Cloud Run:
+
+bash
+Copy code
+gcloud run deploy career-resume-builder \
+  --image=gcr.io/<your-project-id>/career-resume-builder \
+  --platform=managed \
+  --region=us-central1 \
+  --allow-unauthenticated
+Access Your App:
+
+Google Cloud Run provides a public URL, e.g., https://career-resume-builder-<unique-id>.a.run.app.
+🐳 Hosting with Docker
+Prerequisites:
+Docker installed (Installation guide).
+Steps:
+Clone the Repository:
+
+
+git clone https://github.com/UDDITwork/Career-Resume-Builder.git
+cd Career-Resume-Builder
+Build the Docker Image:
+
+
+docker build -t career-resume-builder .
+Run the Docker Container:
+
+bash
+Copy code
+docker run -p 3000:3000 career-resume-builder
+Access Your App:
+
+Open http://localhost:3000 in your browser to see the application running.
+Optional Deployment to Any Cloud:
+
+Push the Docker image to a container registry (e.g., Docker Hub, AWS, Azure) and deploy it using their respective services.
+🔥 Hosting with Firebase Hosting
+Prerequisites:
+Firebase CLI installed (Installation guide).
+A Firebase project (Create one here).
+Steps:
+Initialize Firebase in Your Project:
+
+
+firebase login
+firebase init
+Select Hosting.
+Choose your Firebase project or create a new one.
+Set build/ as the public directory when prompted.
+Build the Application:
+
+
+npm install
+npm run build
+Deploy to Firebase:
+
+
+firebase deploy
+Access Your App:
+
+Firebase will provide a live URL, e.g., https://<your-project-id>.web.app.
+🎯 Choosing the Right Platform
+Google Cloud: Best for scalable, production-ready deployments with serverless capabilities.
+Docker: Ideal for local hosting or portable deployment across various platforms.
+Firebase: Simplest option for hosting static or single-page applications.
+💻 GitHub Repository: Career-Resume-Builder
+🌐 Official Site: [Coming Soon 🚧]
+
+Copy code
+
+
+
+
+
+
+
+1. Download the repo `git clone https://github.com/UDDITwork/Career-Resume-Builder.git`
+2. Change the directory `cd Career-Resume-Builder`
+3. Build the container `docker build -t Career-Resume-Builder .`
+4. Start the container `docker run -p 3000:3000 Career-Resume-Builder`
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see Carrer-Resume-Builder live
