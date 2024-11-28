@@ -1,7 +1,7 @@
 
-# </Career-Resume-Builder>  
+## </Career-Resume-Builder>  
 
-🚀 **under pre-released Beta Module | Shree-AI Version** 🚀  
+🚀 **Under pre-released Beta Module | Shree-AI Version** 🚀  
 <:::Still in dev phase:::>
 Welcome to **Career-Resume-Builder**, the pre-release beta glimpse of Shree-AI's capabilities—a **next-gen AI-powered resume builder** for crafting professional, ATS-ready resumes in real-time. Designed to make resume creation fast, intelligent, and hassle-free, this beta version offers a powerful sneak peek into Shree-AI's transformative potential.  
 
