@@ -56,7 +56,7 @@ OpenResume is created with the NextJS web framework and follows its project stru
 
 ### Method 1: npm
 
-1. Download the repo `git clone https://github.com/xitanggg/open-resume.git`
+1. Download the repo 
 2. Change the directory `cd open-resume`
 3. Install the dependency `npm install`
 4. Start a development server `npm run dev`
